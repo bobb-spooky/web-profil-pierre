@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web profil Pierre Tristan LamaRio, mahasiswa Sistem Informasi Universitas Tanjungpura.">
+    <meta name="author" content="Pierre Tristan LamaRio">
+    <meta name="theme-color" content="#8b5e34">
+
+    <title>Pierre Tristan LamaRio — Web Profil</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Tautan lompat: membantu pengguna keyboard langsung ke konten utama -->
+    <a href="#beranda" class="skip-link">Lewati ke konten utama</a>
+
+    <!-- FITUR TAMBAHAN 1: indikator kemajuan baca (diisi oleh JavaScript) -->
+    <div class="reading-progress" aria-hidden="true">
+        <div class="reading-progress-bar" id="reading-progress-bar"></div>
+    </div>
+
+
+    <!-- ============================================================
+         NAVBAR
+         ============================================================= -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+
+            <a href="#beranda" class="brand">Pierre<span>Tristan</span></a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Navigasi utama">
+                <a href="#beranda" class="nav-link">Beranda</a>
+                <a href="#tentang" class="nav-link">Tentang</a>
+                <a href="#fokus" class="nav-link">Minat</a>
+                <a href="#portofolio" class="nav-link">Portofolio</a>
+                <a href="#profil-akademik" class="nav-link">Akademik</a>
+                <a href="#testimoni" class="nav-link">Testimoni</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#kontak" class="nav-link nav-cta">Kontak</a>
+            </nav>
+
+            <div class="navbar-actions">
+                <button id="dark-mode-toggle" class="btn-icon" type="button" aria-label="Ubah tema terang atau gelap">☾</button>
+
+                <button id="hamburger" class="hamburger" type="button"
+                        aria-label="Buka menu navigasi"
+                        aria-controls="nav-menu"
+                        aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ============================================================
+             HERO
+             ============================================================= -->
+        <section id="beranda" class="hero">
+            <div class="hero-content">
+
+                <div class="hero-photo-wrap">
+                    <div class="hero-photo-frame">
+                        <!-- Ganti foto.jpg dengan foto pribadi (letakkan di folder yang sama).
+                             onerror menyembunyikan gambar apabila berkas tidak ditemukan,
+                             sehingga yang tampil hanya bingkai gradien, bukan ikon rusak. -->
+                       <img src="OIP(2).jpg" alt="Foto profil Pierre Tristan LamaRio">
+                    </div>
+
+                    <span class="photo-caption">Mahasiswa Sistem Informasi</span>
+                </div>
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">Personal Profile</p>
+
+                    <h1>Pierre Tristan <span>LamaRio</span></h1>
+
+                    <p class="hero-subtitle">
+                        Mahasiswa Sistem Informasi &bull; Universitas Tanjungpura
+                    </p>
+
+                    <p class="hero-desc">
+                        Saya memiliki ketertarikan pada sejarah, filsafat, permainan,
+                        dan berbagai hal yang dapat menambah wawasan serta pengalaman.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#tentang" class="btn btn-primary">Kenali Saya</a>
+                        <a href="#portofolio" class="btn btn-outline">Lihat Portofolio</a>
+                    </div>
+
+                    <div class="hero-meta" aria-label="Informasi singkat">
+                        <span><strong>H1101251076</strong> NIM</span>
+                        <span><strong>Semester 3</strong> Sistem Informasi</span>
+                        <span><strong>Pontianak</strong> Kota Asal</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             TENTANG + COUNTER STATISTIK
+             ============================================================= -->
+        <section id="tentang" class="section">
+
+            <div class="section-head">
+                <p class="eyebrow">Tentang Saya</p>
+                <h2>Mengenal Pierre Lebih Dekat</h2>
+                <p class="section-desc">
+                    Saya adalah mahasiswa Program Studi Sistem Informasi di
+                    Universitas Tanjungpura dan saat ini berada di semester 3.
+                </p>
+            </div>
+
+            <div class="about-grid">
+
+                <article class="about-card">
+                    <div class="about-mark">01</div>
+
+                    <h3>Tentang Saya</h3>
+
+                    <p>
+                        Saya menyukai membaca buku yang berkaitan dengan sejarah dan
+                        filsafat. Ketertarikan tersebut membuat saya senang memahami
+                        suatu peristiwa, gagasan, dan sudut pandang yang berbeda.
+                    </p>
+
+                    <p>
+                        Di waktu luang saya juga menikmati bermain game, bermain catur,
+                        bermain bulu tangkis, dan menikmati kopi.
+                    </p>
+                </article>
+
+                <!-- Angka ditulis 0 pada HTML; nilai akhir disimpan di data-target
+                     agar halaman tetap terbaca meskipun JavaScript gagal dimuat. -->
+                <aside class="stats-grid" aria-label="Ringkasan profil">
+
+                    <div class="stat-card">
+                        <span class="counter" data-target="3">0</span>
+                        <p>Semester</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="counter" data-target="2">0</span>
+                        <p>Keahlian</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="counter" data-target="3">0</span>
+                        <p>Minat Utama</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="counter" data-target="2">0</span>
+                        <p>Proyek Web</p>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             MINAT & KESEHARIAN
+             ============================================================= -->
+        <section id="fokus" class="section section-alt">
+
+            <div class="section-head">
+                <p class="eyebrow">Minat &amp; Keseharian</p>
+                <h2>Hal yang Saya Nikmati</h2>
+                <p class="section-desc">
+                    Beberapa hal yang menjadi bagian dari keseharian dan ketertarikan saya.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">📚</div>
+                    <h3>Sejarah</h3>
+                    <p>
+                        Saya senang membaca tentang peristiwa, tokoh, dan perubahan
+                        sosial untuk memahami bagaimana masa lalu membentuk dunia sekarang.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">💭</div>
+                    <h3>Filsafat</h3>
+                    <p>
+                        Saya tertarik pada pertanyaan tentang manusia, gagasan, nilai,
+                        dan cara berpikir melalui bacaan filsafat.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🎮</div>
+                    <h3>Game</h3>
+                    <p>
+                        Bermain game menjadi salah satu cara saya bersantai sekaligus
+                        menikmati tantangan dan strategi.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">☕</div>
+                    <h3>Ngopi</h3>
+                    <p>
+                        Menikmati kopi menjadi salah satu hal sederhana yang saya sukai
+                        ketika membaca atau mengerjakan tugas.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             PORTOFOLIO + FILTER
+             ============================================================= -->
+        <section id="portofolio" class="section">
+
+            <div class="section-head">
+                <p class="eyebrow">Portofolio</p>
+                <h2>Proyek &amp; Kegiatan Belajar</h2>
+                <p class="section-desc">
+                    Kumpulan karya yang menggambarkan proses belajar dan eksplorasi
+                    selama menjadi mahasiswa Sistem Informasi.
+                </p>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filter kategori portofolio">
+                <button class="filter-btn aktif" data-kategori="semua" type="button">Semua</button>
+                <button class="filter-btn" data-kategori="web" type="button">Web</button>
+                <button class="filter-btn" data-kategori="akademik" type="button">Akademik</button>
+                <button class="filter-btn" data-kategori="personal" type="button">Personal</button>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <article class="portfolio-item" data-kategori="web">
+                    <div class="portfolio-visual visual-one" aria-hidden="true"><span>&lt;/&gt;</span></div>
+                    <div class="portfolio-info">
+                        <h3>Web Profil Pribadi</h3>
+                        <p>Pengembangan single-page profile menggunakan HTML, CSS, dan JavaScript.</p>
+                        <span class="tag">Web</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-kategori="web">
+                    <div class="portfolio-visual visual-two" aria-hidden="true"><span>LIB</span></div>
+                    <div class="portfolio-info">
+                        <h3>Perpustakaan Digital ICARUS</h3>
+                        <p>Pengembangan website perpustakaan digital dengan beberapa fitur interaktif.</p>
+                        <span class="tag">Web</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-kategori="akademik">
+                    <div class="portfolio-visual visual-three" aria-hidden="true"><span>UI</span></div>
+                    <div class="portfolio-info">
+                        <h3>Eksplorasi UI/UX</h3>
+                        <p>Latihan menyusun antarmuka dan pengalaman pengguna dalam perancangan sistem.</p>
+                        <span class="tag">Akademik</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-kategori="akademik">
+                    <div class="portfolio-visual visual-four" aria-hidden="true"><span>SYS</span></div>
+                    <div class="portfolio-info">
+                        <h3>Analisis Sistem Informasi</h3>
+                        <p>Latihan memahami kebutuhan sistem, alur proses, dan rancangan solusi.</p>
+                        <span class="tag">Akademik</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-kategori="personal">
+                    <div class="portfolio-visual visual-five" aria-hidden="true"><span>64</span></div>
+                    <div class="portfolio-info">
+                        <h3>Catatan Strategi Catur</h3>
+                        <p>Aktivitas personal untuk melatih pola pikir dan pengambilan keputusan.</p>
+                        <span class="tag">Personal</span>
+                    </div>
+                </article>
+
+                <article class="portfolio-item" data-kategori="personal">
+                    <div class="portfolio-visual visual-six" aria-hidden="true"><span>READ</span></div>
+                    <div class="portfolio-info">
+                        <h3>Catatan Bacaan</h3>
+                        <p>Catatan dan refleksi dari buku sejarah serta filsafat yang dibaca.</p>
+                        <span class="tag">Personal</span>
+                    </div>
+                </article>
+
+                <!-- ITEM TAMBAHAN 1 -->
+                <article class="portfolio-item" data-kategori="web">
+                    <div class="portfolio-visual visual-seven" aria-hidden="true"><span>JS</span></div>
+                    <div class="portfolio-info">
+                        <h3>Eksperimen Interaksi JavaScript</h3>
+                        <p>Latihan DOM, event handling, filter, slider, dan interaksi halaman.</p>
+                        <span class="tag">Web</span>
+                    </div>
+                </article>
+
+                <!-- ITEM TAMBAHAN 2 -->
+                <article class="portfolio-item" data-kategori="akademik">
+                    <div class="portfolio-visual visual-eight" aria-hidden="true"><span>SI</span></div>
+                    <div class="portfolio-info">
+                        <h3>Eksplorasi Pembelajaran Sistem Informasi</h3>
+                        <p>Dokumentasi proses belajar dan penerapan konsep dalam tugas perkuliahan.</p>
+                        <span class="tag">Akademik</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pesan ini ditampilkan JavaScript apabila filter tidak menemukan item -->
+            <p id="portfolio-kosong" class="portfolio-kosong" aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- ============================================================
+             PROFIL AKADEMIK
+             ============================================================= -->
+        <section id="profil-akademik" class="section section-alt">
+
+            <div class="section-head">
+                <p class="eyebrow">Profil Akademik</p>
+                <h2>Perjalanan Pendidikan</h2>
+            </div>
+
+            <div class="team-grid">
+
+                <article class="team-card academic-card">
+                    <div class="academic-icon" aria-hidden="true">01</div>
+                    <h3>Universitas</h3>
+                    <p class="role">Universitas Tanjungpura</p>
+                    <p>Menempuh pendidikan tinggi pada Program Studi Sistem Informasi.</p>
+                </article>
+
+                <article class="team-card academic-card">
+                    <div class="academic-icon" aria-hidden="true">02</div>
+                    <h3>Program Studi</h3>
+                    <p class="role">Sistem Informasi</p>
+                    <p>Mempelajari teknologi, analisis sistem, pengembangan solusi, dan berbagai konsep Sistem Informasi.</p>
+                </article>
+
+                <article class="team-card academic-card">
+                    <div class="academic-icon" aria-hidden="true">03</div>
+                    <h3>Semester</h3>
+                    <p class="role">Semester 3</p>
+                    <p>Sedang melanjutkan proses pembelajaran dan pengembangan kemampuan teknis.</p>
+                </article>
+
+                <article class="team-card academic-card">
+                    <div class="academic-icon" aria-hidden="true">04</div>
+                    <h3>Tujuan Belajar</h3>
+                    <p class="role">Terus Berkembang</p>
+                    <p>Membangun kemampuan akademik dan teknis untuk pengembangan diri di bidang Sistem Informasi.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             TESTIMONI (SLIDER)
+             ============================================================= -->
+        <section id="testimoni" class="section">
+
+            <div class="section-head">
+                <p class="eyebrow">Testimoni</p>
+                <h2>Kesan dari Lingkungan Belajar</h2>
+            </div>
+
+            <div class="testimonial-slider">
+
+                <button id="testi-prev" class="testi-nav" type="button" aria-label="Testimoni sebelumnya">&#10094;</button>
+
+                <div class="testimonial-track" id="testimonial-track">
+
+                    <article class="testimonial-slide">
+                        <p class="quote">
+                            &ldquo;Pierre cukup menikmati diskusi ketika topiknya menyentuh
+                            hal yang benar-benar membuatnya penasaran.&rdquo;
+                        </p>
+                        <div class="testi-author">
+                            <div class="author-avatar" aria-hidden="true">TK</div>
+                            <div>
+                                <strong>Teman Kuliah</strong>
+                                <span>Lingkungan Akademik</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-slide">
+                        <p class="quote">
+                            &ldquo;Ketika mengerjakan tugas, Pierre cenderung suka mencoba
+                            memahami konsep sebelum melihat hasil akhirnya.&rdquo;
+                        </p>
+                        <div class="testi-author">
+                            <div class="author-avatar" aria-hidden="true">RK</div>
+                            <div>
+                                <strong>Rekan Kelompok</strong>
+                                <span>Proses Perkuliahan</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-slide">
+                        <p class="quote">
+                            &ldquo;Minatnya pada sejarah dan filsafat membuat obrolan santai
+                            sering berkembang menjadi diskusi yang menarik.&rdquo;
+                        </p>
+                        <div class="testi-author">
+                            <div class="author-avatar" aria-hidden="true">TS</div>
+                            <div>
+                                <strong>Teman Sekelas</strong>
+                                <span>Diskusi &amp; Kegiatan</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- TESTIMONI TAMBAHAN -->
+                    <article class="testimonial-slide">
+                        <p class="quote">
+                            &ldquo;Pierre punya ketertarikan yang cukup beragam, dari
+                            teknologi sampai bacaan sejarah.&rdquo;
+                        </p>
+                        <div class="testi-author">
+                            <div class="author-avatar" aria-hidden="true">RB</div>
+                            <div>
+                                <strong>Rekan Belajar</strong>
+                                <span>Lingkungan Perkuliahan</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <button id="testi-next" class="testi-nav" type="button" aria-label="Testimoni berikutnya">&#10095;</button>
+
+            </div>
+
+            <!-- Titik navigasi dibuat otomatis oleh JavaScript sesuai jumlah slide -->
+            <div class="testi-dots" id="testi-dots" role="tablist" aria-label="Navigasi testimoni"></div>
+
+        </section>
+
+
+        <!-- ============================================================
+             FAQ (ACCORDION)
+             ============================================================= -->
+        <section id="faq" class="section section-alt">
+
+            <div class="section-head">
+                <p class="eyebrow">FAQ</p>
+                <h2>Pertanyaan Tentang Saya</h2>
+            </div>
+
+            <div class="accordion">
+
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-1">
+                        Apa program studi yang sedang ditempuh?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-1">
+                        <p>
+                            Saya sedang menempuh Program Studi Sistem Informasi di
+                            Universitas Tanjungpura dan saat ini berada di semester 3.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-2">
+                        Apa yang paling saya sukai untuk dibaca?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-2">
+                        <p>Saya paling tertarik pada buku yang berkaitan dengan sejarah dan filsafat.</p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-3">
+                        Apa hobi saya di waktu luang?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-3">
+                        <p>Hobi utama saya adalah bermain game. Saya juga menikmati membaca dan minum kopi.</p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-4">
+                        Apa keahlian yang saya sukai?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-4">
+                        <p>Saya menyukai permainan catur dan bulu tangkis sebagai dua aktivitas yang sering saya lakukan.</p>
+                    </div>
+                </article>
+
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-5">
+                        Mengapa saya tertarik pada sejarah dan filsafat?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-5">
+                        <p>
+                            Karena kedua bidang tersebut membuat saya tertarik memahami
+                            konteks, gagasan, dan sudut pandang yang berbeda.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- FAQ TAMBAHAN 1 -->
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-6">
+                        Apa tujuan saya selama kuliah?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-6">
+                        <p>
+                            Tujuan saya adalah terus mengembangkan kemampuan akademik dan
+                            teknis agar lebih siap menghadapi kebutuhan di bidang Sistem Informasi.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- FAQ TAMBAHAN 2 -->
+                <article class="accordion-item">
+                    <button class="accordion-question" type="button" aria-expanded="false" aria-controls="faq-7">
+                        Bagaimana cara menghubungi saya?
+                        <span class="accordion-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-answer" id="faq-7">
+                        <p>Saya dapat dihubungi melalui email, Instagram, atau GitHub yang tersedia pada bagian Kontak.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+             KONTAK
+             ============================================================= -->
+        <section id="kontak" class="section">
+
+            <div class="section-head">
+                <p class="eyebrow">Kontak</p>
+                <h2>Terhubung dengan Saya</h2>
+                <p class="section-desc">
+                    Gunakan informasi di bawah ini untuk melihat profil atau mengirim pesan.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true">✉</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p id="email-value">titanldk71@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true">◎</span>
+                        <div>
+                            <strong>Instagram</strong>
+                            <p>
+                                <a href="https://www.instagram.com/titancloss/" target="_blank" rel="noopener noreferrer">@titancloss</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon" aria-hidden="true">⌘</span>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p>
+                                <a href="https://github.com/bobb-spooky" target="_blank" rel="noopener noreferrer">github.com/bobb-spooky</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FITUR TAMBAHAN 2: tombol salin email -->
+                    <button id="copy-email" class="btn btn-outline copy-email-btn" type="button">Salin Email</button>
+
+                    <p id="copy-status" class="copy-status" aria-live="polite"></p>
+
+                </div>
+
+
+                <form id="contact-form" class="contact-form" novalidate>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="cf-nama">Nama Lengkap</label>
+                            <input type="text" id="cf-nama" name="nama" required minlength="3" placeholder="Nama Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cf-email">Email</label>
+                            <input type="email" id="cf-email" name="email" required placeholder="nama@email.com">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cf-subjek">Subjek</label>
+                        <input type="text" id="cf-subjek" name="subjek" required placeholder="Topik pesan">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cf-pesan">Pesan</label>
+                        <textarea id="cf-pesan" name="pesan" rows="5" required minlength="10"
+                                  maxlength="300" placeholder="Tulis pesan Anda..."></textarea>
+
+                        <!-- FITUR TAMBAHAN 3: penghitung karakter (diisi JavaScript) -->
+                        <p class="char-counter" id="char-counter" aria-live="polite">0 / 300 karakter</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================= -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <p class="brand">Pierre<span>Tristan</span></p>
+                <p>Web Profil Mahasiswa Sistem Informasi.</p>
+            </div>
+
+            <div class="footer-links">
+                <h5>Tautan Cepat</h5>
+                <a href="#tentang">Tentang</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#profil-akademik">Akademik</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+
+            <div class="footer-social">
+                <h5>Sosial</h5>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/titancloss/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+                    <a href="https://github.com/bobb-spooky" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌘</a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="footer-copy">
+            &copy; 2026 Pierre Tristan LamaRio. Dibuat untuk Praktikum Pemrograman Web Dasar.
+        </p>
+
+    </footer>
+
+
+    <!-- Tombol kembali ke atas -->
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Kembali ke atas">↑</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
